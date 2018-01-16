@@ -12,6 +12,12 @@
 		<spring-version>5.0.2.RELEASE</spring-version>
 	</properties>
 	<dependencies>
+		<!--Linking the backend project with frontend -->
+		<dependency>
+			<groupId>in.co</groupId>
+			<artifactId>BookCartBackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 		<!-- SPRING -->
 		<dependency>
@@ -24,22 +30,22 @@
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
-			</dependency>
+		</dependency>
 
-			<!-- JAVA-EE API -->
-			<dependency>
-				<groupId>javax</groupId>
-				<artifactId>javaee-api</artifactId>
-				<version>${javaee-api}</version>
-				<scope>provided</scope>
-			</dependency>
+		<!-- JAVA-EE API -->
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>${javaee-api}</version>
+			<scope>provided</scope>
+		</dependency>
 
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>3.8.1</version>
-				<scope>test</scope>
-			</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
